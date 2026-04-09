@@ -85,6 +85,10 @@ src/main/java/com/example/demo/
   - `Add_User.html` / `Update_User.html`
   - `Add_Admin.html` / `Update_Admin.html`
 
+### 🛠️ Shared Components & Utilities
+- **Navigation (`Navigation.html`)**: Universal header with dynamic links based on user role.
+- **Error Handling (`exception.html`)**: Custom design for handling and displaying system exceptions.
+
 ---
 
 ## ⚙️ Setup and Installation
