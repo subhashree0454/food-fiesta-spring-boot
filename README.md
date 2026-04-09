@@ -97,6 +97,59 @@ src/main/java/com/example/demo/
 
 ---
 
+## 📸 Interface Preview
+
+<details>
+  <summary><b>Click to view all Application Screens</b></summary>
+  <br>
+  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/1382d32f-3cbb-40c3-b6b5-9fc55cd5176f" width="400">
+    <img src="https://github.com/user-attachments/assets/3e34f54c-c986-42ac-96a4-ed7ad18035a6" width="400">
+  </p>
+  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/a4046d4e-8c3d-4629-8913-5543d709e80e" width="400">
+    <img src="https://github.com/user-attachments/assets/09c92348-ec06-4607-9ae4-88b28cc1e0ec" width="400">
+  </p>
+
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/0e73aece-a28c-413d-9363-245358a0e439" width="400">
+    <img src="https://github.com/user-attachments/assets/ac26bd92-0fcd-473d-a175-9bc45fdb12ba" width="400">
+  </p>
+
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/3d407958-efbe-449f-b4e1-5b08b9f8a28b" width="400">
+    <img src="https://github.com/user-attachments/assets/c11a4710-69f8-42fd-b9d7-2b5278b2c8a3" width="400">
+  </p>
+
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/d3cd3cdd-cda5-460a-a253-24e45cf600b0" width="400">
+    <img src="https://github.com/user-attachments/assets/733afb94-a251-4a6d-86a4-3a124e8c3469" width="400">
+  </p>
+
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/ef09886f-7936-4ef7-b01e-4da0008fd047" width="400">
+    <img src="https://github.com/user-attachments/assets/219272b8-3938-4b7f-ba78-817e507beee9" width="400">
+  </p>
+  
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/d4da51a4-dfe8-4cc1-ae49-745f6e1ae17a" width="400">
+    <img src="https://github.com/user-attachments/assets/09c31cf7-e960-4ea5-a858-8807317486b7" width="400">
+  </p>
+
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/b1da1faa-7e71-49be-972a-432029a1e7c3" width="400">
+    <img src="https://github.com/user-attachments/assets/b0a9a1e2-6018-475a-95fc-d64980677ee7" width="400">
+  </p>
+
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/b860f905-2c35-4af3-9df8-38cda70b4406" width="400">
+  </p>
+</details>
+
+---
+
 ## ⚙️ Setup and Installation
 
 ### Prerequisites
