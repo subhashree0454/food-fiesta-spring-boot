@@ -13,10 +13,11 @@
 ## 🚀 Key Features
 
 - **🛡️ Secure Authentication**: Multi-layered security with role-based access control (Admin/User).
-- **📦 Inventory Management**: Full CRUD operations for products with real-time stock monitoring.
+- **📦 Inventory Management**: Full CRUD operations with categorized items (Biryani, North Indian, Chinese, etc.).
+- **🥘 Diverse Catalog**: Support for multiple cuisines including Tandoori, Paneer delicacies, and Desserts.
 - **🛒 Order Lifecycle**: Seamless order placement, tracking, and history management.
 - **📄 API Documentation**: Interactive Swagger/OpenAPI documentation for all system endpoints.
-- **🎨 Dynamic UI**: Sleek, responsive interface powered by Thymeleaf and modern CSS.
+- **🎨 Dynamic UI**: Sleek, responsive interface with image-rich menus.
 - **📊 Admin Dashboard**: Comprehensive overview of users, products, and total orders.
 
 ---
@@ -68,7 +69,12 @@ src/main/java/com/example/demo/
 
 ### 🏠 Public Access
 - **Home (`Home.html`)**: Landing page with promotional banners and featured items.
-- **Menu/Products (`Products.html`)**: Interactive catalog of available food items.
+- **Menu/Products (`Products.html`)**: Interactive catalog organized by categories:
+  - 🍛 **Biryani**: Hyderabadi, Lucknowi, and Kolkata specialties.
+  - 🍗 **Chicken & Tandoori**: Matka Chicken, Tikka, and Butter Chicken.
+  - 🍜 **Chinese**: Chowmein, Manchurian, and Momos.
+  - 🧀 **Paneer Delights**: Shahi Paneer, Kadai Paneer, and Matar Paneer.
+  - 🥗 **Vegetables & North Indian**: Soya Chaap, Chola Bhatura, and more.
 - **Location (`Locate_us.html`)**: Google Maps integration and restaurant address details.
 - **About (`About.html`)**: Restaurant story, team, and mission.
 
