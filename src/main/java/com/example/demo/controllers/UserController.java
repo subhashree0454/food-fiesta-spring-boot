@@ -26,6 +26,13 @@ public class UserController
 		return "redirect:/admin/services";
 	}
 
+	@PostMapping("/register")
+	public String registerUser(@ModelAttribute("userRegistration") User user, Model model)
+	{
+		this.services.addUser(user);
+		return "redirect:/login";
+	}
+
 	@GetMapping("/updatingUser/{id}")
 	public String updateUser(@ModelAttribute User user, @PathVariable("id") int id)
 	{

@@ -195,4 +195,4 @@ Contributions are what make the open-source community such an amazing place to l
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-*Developed with ❤️ by the Food Fiesta Team*
+*Developed with ❤️ in 2026 by the Food Fiesta Team*
