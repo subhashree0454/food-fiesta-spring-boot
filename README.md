@@ -64,6 +64,29 @@ src/main/java/com/example/demo/
 
 ---
 
+## 🖥️ Application Workflow & Pages
+
+### 🏠 Public Access
+- **Home (`Home.html`)**: Landing page with promotional banners and featured items.
+- **Menu/Products (`Products.html`)**: Interactive catalog of available food items.
+- **Location (`Locate_us.html`)**: Google Maps integration and restaurant address details.
+- **About (`About.html`)**: Restaurant story, team, and mission.
+
+### 👤 User Module
+- **Registration (`register.html`)**: Account creation for new customers.
+- **Login (`Login.html`)**: Secure entry for users and administrators.
+- **Ordering (`BuyProduct.html`)**: Selection and quantity management for orders.
+- **Success (`Order_success.html`)**: Order confirmation and summary.
+
+### 🔐 Admin Dashboard
+- **Management Center (`Admin_Page.html`)**: Central hub for monitoring users, stock, and orders.
+- **Entities CRUD**:
+  - `Add_Product.html` / `Update_Product.html`
+  - `Add_User.html` / `Update_User.html`
+  - `Add_Admin.html` / `Update_Admin.html`
+
+---
+
 ## ⚙️ Setup and Installation
 
 ### Prerequisites
