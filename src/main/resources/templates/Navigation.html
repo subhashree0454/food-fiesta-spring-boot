@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav th:fragment="navbar()" class="navbar">
+        <a href="/home" class="navbar-brand">Food Fiesta</a>
+        <div class="navbar-links">
+            <a href="/home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="/products"><i class="fa-solid fa-utensils"></i> Dishes</a>
+            <a href="/location"><i class="fa-solid fa-location-dot"></i> Locate Us</a>
+            <a href="/about"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="/login" class="btn-primary" style="padding: 10px 25px; border-radius: 50px; box-shadow: none;">Log In</a>
+        </div>
+    </nav>
+</body>
+</html>

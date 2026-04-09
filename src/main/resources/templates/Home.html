@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Fiesta | Premium Gourmet Experience</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav th:replace="~{Navigation::navbar()}"></nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content animate-up">
+                <h1>Taste the <span style="color: var(--primary);">Fiesta</span> in every bite.</h1>
+                <p>Experience culinary excellence with Food Fiesta. From gourmet dishes to street favorites, we bring the world's best flavors right to your table.</p>
+                <div style="display: flex; gap: 20px; justify-content: center;">
+                    <a href="/products" class="btn-primary">Explore Menu</a>
+                    <a href="/about" class="btn-primary" style="background: white; color: var(--on-surface); border: 1px solid var(--outline-variant); box-shadow: none;">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 100px 5%; background: white;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 60px;">Why Choose <span style="color: var(--primary);">Food Fiesta</span>?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                    <div class="card">
+                        <i class="fa-solid fa-bolt" style="font-size: 2rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Lightning Fast Delivery</h3>
+                        <p style="color: var(--on-surface-variant);">Hot and fresh food delivered to your doorstep in under 30 minutes.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-leaf" style="font-size: 2rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Fresh Ingredients</h3>
+                        <p style="color: var(--on-surface-variant);">We source directly from local farms to ensure the highest quality and taste.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-award" style="font-size: 2rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>Expert Chefs</h3>
+                        <p style="color: var(--on-surface-variant);">Our team of world-class chefs creates magic in every single dish they prepare.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 60px 5%; background: var(--surface-container-low); text-align: center; border-top: 1px solid var(--outline-variant);">
+        <h2 style="color: var(--primary); font-weight: 800; margin-bottom: 20px;">Food Fiesta</h2>
+        <p style="color: var(--on-surface-variant); margin-bottom: 30px;">Elevating your dining experience, one plate at a time.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; font-size: 1.5rem; color: var(--on-surface);">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p style="margin-top: 40px; font-size: 0.9rem; color: var(--on-surface-variant); opacity: 0.6;">&copy; 2024 Food Fiesta. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

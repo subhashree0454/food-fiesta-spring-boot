@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #b02f00; /* Deep Orange */
+    --primary-container: #ff5722;
+    --on-primary: #ffffff;
+    --surface: #fbf9f8; /* Cream Background */
+    --on-surface: #1b1c1c; /* Dark Charcoal */
+    --on-surface-variant: #5b4039;
+    --surface-container-low: #f6f3f2;
+    --surface-container-lowest: #ffffff;
+    --outline-variant: #e4beb4;
+    --glass: rgba(255, 255, 255, 0.7);
+    --blur: blur(20px);
+    --transition-soft: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--on-surface);
+}
+
+/* Glassmorphism Navigation */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1200px;
+    background: var(--glass);
+    backdrop-filter: var(--blur);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-soft);
+}
+
+.navbar:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--primary), var(--primary-container));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--on-surface);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-soft);
+}
+
+.navbar-links a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at top right, #ffeadb, transparent),
+                radial-gradient(circle at bottom left, #f3f0f0, transparent);
+    padding: 20px;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 10vw, 5rem);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--on-surface-variant);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-container));
+    color: white;
+    padding: 15px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: var(--transition-soft);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(176, 47, 0, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(176, 47, 0, 0.3);
+}
+
+/* Cards */
+.card {
+    background: var(--surface-container-lowest);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: var(--transition-soft);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--on-surface-variant);
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    background: var(--surface-container-low);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-soft);
+}
+
+.form-input:focus {
+    outline: none;
+    background: white;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(176, 47, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
