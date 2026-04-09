@@ -3,103 +3,60 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>TEA : REGISTER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Food Fiesta</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-        }
-
-        .RegistrationContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .registration {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
-            padding: 20px;
-        }
-
-        .registration h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        .registration label {
-            display: block;
-            margin-bottom: 8px;
-            color: #555;
-        }
-
-        .registration input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .registration button {
-            background-color: #4caf50;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .registration button:hover {
-            background-color: #45a049;
-        }
-
-        .registration p {
-            margin-top: 10px;
-            text-align: center;
-            font-size: 14px;
-            color: #ff0000;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="RegistrationContainer">
-        <div class="registration">
-            <div class="content">
-                <h2>Register</h2>
+    <nav th:replace="~{Navigation::navbar()}"></nav>
+
+    <div class="auth-wrapper">
+        <div class="auth-card animate-up">
+            <div style="margin-bottom: 32px; text-align: center;">
+                <div style="width: 48px; height: 48px; background: var(--primary-container); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+                    <i class="fa-solid fa-user-plus" style="color: var(--primary);"></i>
+                </div>
+                <h2 style="font-size: 1.75rem; margin-bottom: 8px;">Create Account</h2>
+                <p style="font-size: 0.875rem; color: var(--on-surface-variant);">Join the Food Fiesta family today</p>
+            </div>
 
             <form th:action="@{/register}" method="get" th:object="${userRegistration}">
-				    <label for="u_id">UserID:</label>
-                    <input type="text" id="u_id" name="u_id" th:field="*{u_id}" required><br>
-                    
-                    <label for="uemail">Email:</label>
-                    <input type="email" id="uemail" name="uemail" th:field="*{uemail}" required><br>
+                <div style="margin-bottom: 16px;">
+                    <label style="font-size: 0.875rem; font-weight: 600;">Full Name</label>
+                    <input type="text" th:field="*{uname}" placeholder="John Doe" class="input-field" required>
+                </div>
 
-                    <label for="uname">Username:</label>
-                    <input type="text" id="uname" name="uname" th:field="*{uname}" required><br>
+                <div style="margin-bottom: 16px;">
+                    <label style="font-size: 0.875rem; font-weight: 600;">Email Address</label>
+                    <input type="email" th:field="*{uemail}" placeholder="john@example.com" class="input-field" required>
+                </div>
 
-                    <label for="unumber">Phone Number:</label>
-                    <input type="text" id="unumber" name="unumber" th:field="*{unumber}" required><br>
+                <div style="margin-bottom: 16px;">
+                    <label style="font-size: 0.875rem; font-weight: 600;">Phone Number</label>
+                    <input type="text" th:field="*{unumber}" placeholder="+91 9876543210" class="input-field" required>
+                </div>
 
-                    <label for="upassword">Password:</label>
-                    <input type="password" id="upassword" name="upassword" th:field="*{upassword}" required><br>
+                <div style="margin-bottom: 16px;">
+                    <label style="font-size: 0.875rem; font-weight: 600;">Choose Password</label>
+                    <input type="password" th:field="*{upassword}" placeholder="••••••••" class="input-field" required>
+                </div>
 
-                    <button type="submit">Register</button>
-                </form>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">Register Now</button>
+            </form>
 
-
-                <p th:text="${error}" style="color: red;"></p>
-            </div>
+            <p th:if="${error}" th:text="${error}" style="color: var(--primary); font-size: 0.875rem; margin-top: 16px; text-align: center;"></p>
+            
+            <p style="margin-top: 24px; text-align: center; font-size: 0.875rem; color: var(--on-surface-variant);">
+                Already have an account? <a th:href="@{/login}" style="color: var(--primary); font-weight: 700; text-decoration: none;">Sign In</a>
+            </p>
         </div>
     </div>
+
+    <footer style="padding: 48px 5%; text-align: center; color: var(--on-surface-variant); font-size: 0.875rem;">
+        &copy; 2024 Food Fiesta. Privacy Protected.
+    </footer>
 </body>
 
 </html>
